@@ -14,6 +14,7 @@ Each guide is fetched on-demand via a keyword trigger in your `~/.claude/CLAUDE.
 | `review` | Review code for quality, security & performance |
 | `planning` | Plan a feature before writing any code |
 | `explain` | Get a concept explained at your level |
+| `refactor` | Restructure code without changing behavior |
 
 ---
 
@@ -25,7 +26,8 @@ Add trigger lines to `~/.claude/CLAUDE.md`:
 Wenn ich "debugging" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/debugging_guide.md
 Wenn ich "review" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/code_review_guide.md
 Wenn ich "planning" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/feature_planning_guide.md
-Wenn ich "erkläre" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/explain_guide.md
+Wenn ich "explain" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/explain_guide.md
+Wenn ich "refactor" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/refactor_guide.md
 ```
 
 Claude will fetch the matching guide whenever you use the keyword in a conversation.
@@ -66,7 +68,7 @@ A structured planning session before writing any code:
 - Delivers a prioritized checklist with recommended implementation order
 - Supports learn mode (think it through together) and direct mode (give me the plan)
 
-### `explain_guide.md` — triggered by `erkläre`
+### `explain_guide.md` — triggered by `explain`
 
 Concept explanations tailored to your current knowledge level:
 
@@ -74,6 +76,24 @@ Concept explanations tailored to your current knowledge level:
 - Three depth levels: **O** (overview), **D** (internals), **P** (practical example in your project context)
 - Always includes an analogy and a comprehension check at the end
 - Distinguishes when to use one concept vs. another
+
+### `refactor_guide.md` — triggered by `refactor`
+
+Structured refactoring that improves code structure without changing behavior:
+
+- Identifies candidates: readability, duplication, responsibility, complexity, framework anti-patterns
+- Names the refactoring technique used (Extract Function, Rename, etc.)
+- Always includes a behavior-check at the end to confirm nothing broke
+- Supports learn mode (explain each step) and direct mode (deliver the refactored code)
+
+---
+
+## Planned
+
+- `testing_guide.md` — write meaningful tests: what to test, what not, unit vs. integration, mocking strategy
+- `git_guide.md` — commit messages, branch naming, PR descriptions, when to squash
+- `security_guide.md` — OWASP checklist, Django security pitfalls, JWT edge cases
+- `performance_guide.md` — profiling-first approach, DB query optimization, frontend render performance
 
 ---
 
