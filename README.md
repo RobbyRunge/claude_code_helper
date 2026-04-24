@@ -14,6 +14,7 @@ Add trigger lines to `~/.claude/CLAUDE.md`:
 Wenn ich "debugging" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/debugging_guide.md
 Wenn ich "review" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/code_review_guide.md
 Wenn ich "planning" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/feature_planning_guide.md
+Wenn ich "erkläre" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/explain_guide.md
 ```
 
 Claude will fetch the matching guide whenever you use the keyword in a conversation.
@@ -54,11 +55,14 @@ A structured planning session before writing any code:
 - Delivers a prioritized checklist with recommended implementation order
 - Supports learn mode (think it through together) and direct mode (give me the plan)
 
----
+### `explain_guide.md` — triggered by `erkläre`
 
-## Planned guides
+Concept explanations tailored to your current knowledge level:
 
-- `explain_guide.md` — get concept explanations tailored to your level
+- Asks what you already know before explaining — no re-explaining the obvious
+- Three depth levels: **O** (overview), **D** (internals), **P** (practical example in your project context)
+- Always includes an analogy and a comprehension check at the end
+- Distinguishes when to use one concept vs. another
 
 ---
 
