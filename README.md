@@ -6,6 +6,17 @@ Each guide is fetched on-demand via a keyword trigger in your `~/.claude/CLAUDE.
 
 ---
 
+## Quick Reference
+
+| Keyword | Guide |
+|---------|-------|
+| `debugging` | Debug a problem step by step |
+| `review` | Review code for quality, security & performance |
+| `planning` | Plan a feature before writing any code |
+| `explain` | Get a concept explained at your level |
+
+---
+
 ## Setup
 
 Add trigger lines to `~/.claude/CLAUDE.md`:
