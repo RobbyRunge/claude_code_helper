@@ -13,6 +13,7 @@ Add trigger lines to `~/.claude/CLAUDE.md`:
 ```
 Wenn ich "debugging" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/debugging_guide.md
 Wenn ich "review" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/code_review_guide.md
+Wenn ich "planning" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/feature_planning_guide.md
 ```
 
 Claude will fetch the matching guide whenever you use the keyword in a conversation.
@@ -44,11 +45,19 @@ A structured code review that covers all the areas that matter:
 
 Supports the same two modes as the debugging guide — learn-focused or straight to the fix.
 
+### `feature_planning_guide.md` — triggered by `planning`
+
+A structured planning session before writing any code:
+
+- Covers backend (models, migrations, endpoints, serializers, signals) and frontend (components, state, routing, error handling)
+- Explicitly walks through edge cases and risks
+- Delivers a prioritized checklist with recommended implementation order
+- Supports learn mode (think it through together) and direct mode (give me the plan)
+
 ---
 
 ## Planned guides
 
-- `feature_planning_guide.md` — think through a feature before writing code
 - `explain_guide.md` — get concept explanations tailored to your level
 
 ---
