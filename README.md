@@ -15,6 +15,7 @@ Each guide is fetched on-demand via a keyword trigger in your `~/.claude/CLAUDE.
 | `planning` | Plan a feature before writing any code |
 | `explain` | Get a concept explained at your level |
 | `refactor` | Restructure code without changing behavior |
+| `testing` | Write meaningful tests for your code |
 
 ---
 
@@ -28,6 +29,7 @@ Wenn ich "review" sage, fetche und befolge: https://raw.githubusercontent.com/Ro
 Wenn ich "planning" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/feature_planning_guide.md
 Wenn ich "explain" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/explain_guide.md
 Wenn ich "refactor" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/refactor_guide.md
+Wenn ich "testing" sage, fetche und befolge: https://raw.githubusercontent.com/RobbyRunge/claude_code_helper/main/testing_guide.md
 ```
 
 Claude will fetch the matching guide whenever you use the keyword in a conversation.
@@ -86,11 +88,20 @@ Structured refactoring that improves code structure without changing behavior:
 - Always includes a behavior-check at the end to confirm nothing broke
 - Supports learn mode (explain each step) and direct mode (deliver the refactored code)
 
+### `testing_guide.md` — triggered by `testing`
+
+Helps write tests that give real confidence, not just coverage numbers:
+
+- Recommends the right test type (unit / integration / E2E) for the code at hand
+- Follows Arrange / Act / Assert structure throughout
+- Explicitly calls out what NOT to test (framework behavior, trivial getters)
+- Includes a coverage-check at the end: what's missing and what to tackle next
+
 ---
 
 ## Planned
 
-- `testing_guide.md` — write meaningful tests: what to test, what not, unit vs. integration, mocking strategy
+
 - `git_guide.md` — commit messages, branch naming, PR descriptions, when to squash
 - `security_guide.md` — OWASP checklist, Django security pitfalls, JWT edge cases
 - `performance_guide.md` — profiling-first approach, DB query optimization, frontend render performance
